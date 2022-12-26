@@ -1,0 +1,65 @@
+body {
+    background: rgb(67,139,213);
+background: radial-gradient(circle, rgba(67,139,213,0.9598214285714286) 15%, rgba(150,202,255,0.9598214285714286) 23%, rgba(131,60,186,1) 97%);
+}
+
+.home h1 {
+    font-family: 'Fredoka One';
+    font-size: 22px;
+    color :antiquewhite;
+    align-items: center;
+}
+
+.nav {
+    font-family: 'Fredoka One';
+    font-size: 15px;
+    color: aliceblue;
+
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    list-style: none;
+}
+
+.sceneBas {
+    height :36rem;
+    opacity: 0.7;
+}
+.sceneHaut {
+    height:40%;
+    opacity : 0.6;
+}
+
+.effetNeon {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+    animation: lumiere 1s infinite linear;
+}
+@keyframes lumiere {
+    0%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(152, 18, 230),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+    }
+   50%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 32px rgb(230, 18, 124),
+        0 0 87px rgb(230, 18, 124),
+        0 0 120px rgb(230, 18, 124);
+    }
+}
