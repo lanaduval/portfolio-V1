@@ -5,7 +5,6 @@ import * as THREE from "three";
 import { Water } from "three/examples/jsm/objects/Water.js";
 
 extend({ Water });
-
 function Ocean() {
   const ref = useRef();
   const gl = useThree((state) => state.gl);
