@@ -7,7 +7,6 @@ export default function SphereHaut(){
     return (
 <mesh rotation={[25,6,20]}>
 <sphereGeometry attach ="geometry" args={[0.7, 30, 30]}/>
-{/*<meshStandardMaterial attach ="material" transparent opacity={0.5} color='#816EFC' metalness={0.5}/> */}
 <meshStandardMaterial map={colorMap}/>
 
 </mesh>

@@ -14,13 +14,11 @@ export default function Info() {
 
     return (
     <div className="project">
-        <h1> 2022 </h1>
-        {projets.map((projet)=>(
+        {projets.reverse().map((projet)=>(
         <div className="projectCard">
             <h2>{projet.name}</h2>
             <img src={projet.image} alt ="aperçu du site"/>
             <p>{projet.description}</p>
-
             </div>
         ))}
 

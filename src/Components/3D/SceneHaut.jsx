@@ -1,7 +1,6 @@
 import { Canvas} from '@react-three/fiber';
 import {Stars} from '@react-three/drei';
 import SphereHaut from './SphereHaut';
-import SphereBas from './SphereBas';
 
 export default function SceneHaut(){
 
