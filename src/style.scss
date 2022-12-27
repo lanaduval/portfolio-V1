@@ -1,21 +1,26 @@
 body {
     background: rgb(67,139,213);
 background: radial-gradient(circle, rgba(67,139,213,0.9598214285714286) 15%, rgba(150,202,255,0.9598214285714286) 23%, rgb(106, 62, 140) 97%);
-height: 100%;
+font-family: 'Oxygen';
 }
+
+
 //HEADER
 .welcome {
-    font-size: 1rem;
+    font-size: 2rem;
     opacity: 0.5;
     color: #fff;
     text-align: left;
     padding-bottom: 2rem;
     padding-left: 2rem;
+    
 
 }
 
 .header {
     padding : 0.5rem;
+   
+
 }
 
 // NAVBAR  
@@ -24,12 +29,10 @@ height: 100%;
     color: inherit;
 } 
 .nav {
-    font-family: 'Fredoka One';
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: rgb(233, 228, 228);
     text-transform: uppercase;
-    opacity: 0.6;
-    text-decoration: none;
+    opacity: 1;
 
 }
 
@@ -38,12 +41,12 @@ height: 100%;
     justify-content: space-between;
     padding-right: 1rem;
     list-style: none;
-    text-decoration: none;
+
         
 :hover{
     
-    color: #fff;
-    opacity: 0.6;
+    color: rgb(41, 42, 44);
+    opacity: 1;
     text-shadow:        0 0 7px rgb(236, 230, 250),        0 0 10px rgb(181, 170, 201),        0 0 42px rgb(234, 181, 208),        0 0 77px rgb(230, 18, 124),        0 0 100px rgb(155, 79, 117);
 
     animation: lumiere 1s infinite linear;
@@ -67,14 +70,9 @@ height: 100%;
         0 0 120px rgb(114, 17, 167);
     }
 }
+}
 // HOMEPAGE
-.home h1 {
-    font-family: 'Fredoka One';
-    font-size: 22px;
-    color :antiquewhite;
-    align-items: center;
-}
-}
+
 .sceneBas {
     height :36rem;
     opacity: 0.7;
@@ -85,8 +83,9 @@ height: 100%;
 }
 
 .effetNeon {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: left;
+    text-transform: uppercase;
     padding-left: 2rem;
     color: #fff;
     opacity: 0.6;
@@ -114,29 +113,28 @@ height: 100%;
 }
 // PROJETS
 .projectCard {
+    font-family: 'Spectral';
     display: flex;
     flex-direction: column;
-    background-color: #fff;
     padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0.5rem 0.5rem 1rem #fff;
-    opacity: 0.6;
-    height:25rem;
+    border-radius:0.2rem;
     width: 50%;
     margin: 2rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    -webkit-border-radius:0.2rem;
+    -moz-border-radius:0.2rem;
+    -ms-border-radius:0.2rem;
+    -o-border-radius:0.2rem;
 }
 .project {
+
+    background-color: #fff;
+    opacity: 0.2;
     margin-top: 2rem;
-    padding-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:25rem;
+  height:100%;
   overflow:scroll;
   width: 100%;
  animation-name: slide;
@@ -162,13 +160,15 @@ height: 100%;
     align-items: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    width: 100%;
+    height:100%;
     animation-name: slide;
     animation-duration: 3s;
     animation-iteration-count: 1; 
     @keyframes slide {
       from {
         margin-left: 100%;
-        width: 100%;
+        width: 300%;
       }
     
       to {
@@ -181,11 +181,9 @@ height: 100%;
 .infoCard{
     color: #fff;
     background-color: black;
-    border-radius: 1rem;
-    box-shadow: 0.5rem 0.5rem 1rem rgb(22, 21, 21);
     opacity: 0.6;
-    width: 50%;
-    height:25rem;
+    width: 100%;
+    min-height:60vh;
     overflow:auto;
     display: flex;
     flex-direction: column;

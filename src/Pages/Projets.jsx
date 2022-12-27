@@ -7,7 +7,7 @@ export default function Info() {
         description: "Site vitrine pour un restaurateur parisien",
     },{
         name: "Toasty Mood",
-        image :"./ToastyMoodWeb.png",
+        image :"../assets/ToastyMoodWeb.png",
         description: "Web app pour comparer son humeur et la météo",
     }
     ]
