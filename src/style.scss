@@ -126,6 +126,7 @@ font-family: 'Mukta';
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    margin-bottom: 2rem;
     border-radius:0.2rem;
     width: 50%;
     margin-top:2rem;
@@ -138,8 +139,7 @@ font-family: 'Mukta';
 }
 .project {
     padding-top: 20vh;
-    padding-bottom: 5vh;
-height: 70vh;
+height: 80vh;
     opacity: 0.8;
     display: flex;
     flex-wrap: wrap;
