@@ -2,6 +2,7 @@ body {
     background: rgb(67,139,213);
 background: radial-gradient(circle, rgba(67,139,213,0.9598214285714286) 15%, rgba(150,202,255,0.9598214285714286) 23%, rgb(106, 62, 140) 97%);
 font-family: 'Oxygen';
+scroll-behavior: smooth;
 }
 
 
@@ -153,7 +154,7 @@ height: 80vh;
   @keyframes slide {
     from {
       margin-left: 100%;
-      width: 300%;
+      width: 100%;
     }
   
     to {
@@ -166,13 +167,14 @@ height: 80vh;
 // ABOUT/INFO
 .info {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
     width: 100%;
-    height:100%;
+    height:100vh;
     animation-name: slide;
     animation-duration: 3s;
     animation-iteration-count: 1; 
@@ -192,18 +194,24 @@ height: 80vh;
 }
 .infoCard{
     color: #fff;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.1);
     opacity: 0.6;
-    width: 100%;
+    width: 50%;
     min-height:60vh;
     overflow:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 2rem;
     padding: 2rem;
-
-  }
+    backdrop-filter: sepia(90%);
+    background-image: radial-gradient(circle, rgba(67,139,213,0.3) 15%, rgba(150,202,255,0.5) 23%, rgb(106, 62, 140, 0.5) 97%);
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
 
 
 
