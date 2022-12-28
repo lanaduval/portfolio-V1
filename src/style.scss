@@ -3,9 +3,32 @@ body {
 background: radial-gradient(circle, rgba(67,139,213,0.9598214285714286) 15%, rgba(150,202,255,0.9598214285714286) 23%, rgb(106, 62, 140) 97%);
 font-family: 'Oxygen';
 scroll-behavior: smooth;
+box-sizing: border-box;
 }
 
+@media only screen and (max-width: 600px) {
+.nav{
+    padding: 0;
+    margin: 0;
+}.nav ul{
+font-size: 0.9rem;
+padding:0;
+margin:0;
+}
+.header {
+width: 70%;
+padding: 0;
+z-index: 1;
+position: absolute;
+display: inline-block;
+margin-left: -11%;
+margin-top: -10%;
 
+
+}
+
+}
+//DESKTOP
 //HEADER
 
 
