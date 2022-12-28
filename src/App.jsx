@@ -5,12 +5,13 @@ import Info from "./Pages/Info";
 import Contact from "./Pages/Contact";
 import Header from "./Components/Header";
 import Projets from "./Pages/Projets";
+import Nav from "./Components/Nav";
 
 function App() {
   return (
     <div>
          <BrowserRouter>
-      <Header/>
+      <Nav/>
       <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/info" element={<Info/>} />

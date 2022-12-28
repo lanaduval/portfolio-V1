@@ -4,9 +4,8 @@ import Welcome from "./Welcome";
 
 export default function Header() {
     return (
-<div className="header">
-<Welcome />
-<Nav />
+<div className="header" >
+<Welcome  />
 </div>
     )
 };
