@@ -1,12 +1,12 @@
 import SceneBas from "../Components/3D/SceneBas";
 import SceneHaut from"../Components/3D/SceneHaut";
-import Header from "../Components/Header";
+import Welcome from "../Components/Welcome";
 import "../style.scss";
 
 export default function Home() {
     return (
         <div>
-               <Header/>
+<Welcome />
 <SceneHaut className="sceneHaut" />
 <SceneBas className="sceneBas" />
  </div>
