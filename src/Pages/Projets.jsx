@@ -5,14 +5,14 @@ export default function Info() {
         url :require("../assets/ImgProjets/ToastyMoodWeb.png"),
         description: "Site vitrine pour un restaurateur parisien",
     },{
-        name: "Toasty Mood",
-        url :require("../assets/ImgProjets/ToastyMoodWeb.png"),
-        description: "Web app pour comparer son humeur et la météo",
-    },{
         name: "Find you dream",
     url :require("../assets/ImgProjets/ToastyMoodWeb.png"),
     description: "Hackaton de 36h",
-}
+    },{
+        name: "Toasty Mood",
+        url :require("../assets/ImgProjets/ToastyMoodWeb.png"),
+        description: "Web app pour comparer son humeur et la météo",
+    }
     ]
 
     return (
