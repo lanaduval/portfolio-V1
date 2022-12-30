@@ -1,4 +1,3 @@
-import NasaPicture from "../Components/NasaPicture";
 
 export default function Info() {
 
