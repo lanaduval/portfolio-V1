@@ -99,7 +99,6 @@ font-family: 'Remboy';
 // PROJECTS
 .projectCard {
     color: rgba(0, 0, 0, 0.8);
-    font-family: 'Mukta';
     display: flex;
     flex-direction: column;
 
@@ -119,31 +118,39 @@ font-family: 'Remboy';
     background-image: radial-gradient(circle, rgba(67,139,213,0.3) 15%, rgba(150,202,255,0.5) 23%, rgb(106, 62, 140, 0.5) 97%);
 }
 .project {
-    margin-top: 5vh;
-height: 90vh;
-padding-bottom: 5vh;
-    opacity: 0.8;
-    display: flex;
-    flex-wrap: wrap;
+  margin-top: 5vh;
+  height: 90vh;
+  padding-bottom: 5vh;
+  opacity: 0.8;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   overflow: scroll;
   width: 100%;
- animation-name: slide;
-  animation-duration: 3s;
-  animation-iteration-count: 1; 
-  @keyframes slide {
-    from {
-      margin-left: 100%;
-      width: 100%;
+  bottom: 100%;
+ animation-name: downUp;
+ animation-duration: 3s;
+ animation-iteration-count: 1;
+ @keyframes downUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 1;
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -o-transform: translateY(100%);
     }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
+100% {
+  transform:translateY(0%) ;
+  -webkit-transform:translateY(0%) ;
+  -moz-transform:translateY(0%) ;
+  -ms-transform:translateY(0%) ;
+  -o-transform:translateY(0%) ;
 }
+ }
+}
+
 // INFOS
 .info {
     display: flex;
@@ -174,7 +181,6 @@ padding-bottom: 5vh;
     margin :2rem;
     font-size: 1.3rem;
     color: rgba(0, 0, 0, 0.8);
-    font-family: 'Mukta';
     background-color: rgba(0, 0, 0, 0.1);
     //opacity: 0.6;
     min-height:60vh;
@@ -190,25 +196,34 @@ padding-bottom: 5vh;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
-}
 
+}
 // CONTACT 
 .contactForm {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px) invert(10%);
-  background-image: radial-gradient(circle, rgba(108, 168, 228, 0.4) 15%, rgba(150,202,255,0.2) 23%, rgba(156, 117, 186, 0.5) 97%);
-  border-radius: 2rem;
-  margin-top: 3rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ color: rgba(0, 0, 0, 0.6);
+ backdrop-filter: blur(10px) invert(10%);
+ background-image: radial-gradient(circle, rgba(108, 168, 228, 0.4) 15%, rgba(150,202,255,0.2) 23%, rgba(100, 56, 132, 0.5) 97%);
+ border-radius: 2rem;
+ margin-top: 3rem;
  margin-left: 2rem;
  margin-right: 2rem;
- margin-bottom: 2rem;
- padding-top: 2rem;
+ margin-bottom: 1rem;
+ padding-top: 2.5rem;
  padding-bottom: 2rem;
+ animation: fadeIn 3s;
+ -webkit-animation: fadeIn 3s;
+ -moz-animation: fadeIn 3s;
+ -o-animation: fadeIn 3s;
+ -ms-animation: fadeIn 3s;
+ @keyframes fadeIn {
+ 0% { opacity: 0; }
+ 100% { opacity: 1; }
+}
+
 
 }
 .contactForm h1 {
@@ -220,17 +235,18 @@ padding-bottom: 5vh;
 .contactForm input, textarea {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 1.5rem;
+  padding: 1.6rem;
   margin: 0.5rem;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 0.9rem;
+  font-size: 1rem;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   border: none;
+  font-family: 'Oxygen';
+
 }
 
 .contactForm label {

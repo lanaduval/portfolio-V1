@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBell, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faAlignCenter} from '@fortawesome/free-solid-svg-icons'
 import { faTwitter , faInstagram} from '@fortawesome/free-brands-svg-icons'
 
 
@@ -28,20 +28,18 @@ export default function Contact() {
 
 
 <form className='contactFormLabel' ref={form} onSubmit={sendEmail}>
-      <label >Name</label>
-      <input type="text" name="user_name" />
+      <label >Nom</label>
+      <input placeholder="Votre Nom Prénom"type="text" name="user_name" />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input placeholder="votre@mail"type="email" name="user_email" />
       <label>Message</label>
-      <textarea name="message" />
+      <textarea placeholder="Votre message" name="message" />
       <input id="sendButton"type="submit" value="Send" />
     </form>
     </div>
 
-<FontAwesomeIcon className='fab fa-react fa-beat  fa-2x' icon={faBell} />
-<FontAwesomeIcon className='fab fa-react fa-fade  fa-2x' icon={faEnvelope} />
-<FontAwesomeIcon icon={faTwitter} />
-<FontAwesomeIcon icon={faInstagram} />
+<a href="https://www.instagram.com/lana.duval/?hl=fr" rel='noopener noreferrer' target="_blank"><FontAwesomeIcon className='fab fa-react fa-2x'style={{color: "#FFF", marginInline:"3rem", marginTop:"0", paddingBlock:"1rem", alignItems:"center", opacity:"0.7"}} icon={faInstagram} /></a>
+<a href="https://twitter.com/Sisslug" rel='noopener noreferrer' target="_blank"><FontAwesomeIcon className='fab fa-react fa-2x' style={{color: "#FFF", marginInline:"2rem", paddingBlock:"1rem", opacity:"0.7"}}icon={faTwitter} /></a>
 </div>
 
     
