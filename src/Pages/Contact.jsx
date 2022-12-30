@@ -30,9 +30,11 @@ const handleMessageChange = (e) => {
       };
       
 const submitMsg = (e) => { e.preventDefault();
-if (name !==('') && message !==('')){ notify();}
-    
-} else 
+if (name !==('') && message !==('')){ notify();
+} else {
+    toast.error("Formulaire vide ! ❌")
+    }
+}
 
   
   const sendEmail = (e) => {
@@ -57,7 +59,7 @@ if (name !==('') && message !==('')){ notify();}
         <div className="contactForm">
     <h1 >Pour collaborer, <br/> envoyez-moi un message ici :</h1>
 
-    <ToastContainer
+    <ToastContainer theme="dark"
         autoClose={2000}
         position="bottom-center"
         className="toast-container"
