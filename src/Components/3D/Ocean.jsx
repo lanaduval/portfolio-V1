@@ -14,7 +14,7 @@ function Ocean() {
 
 
   waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping;
-  const geom = useMemo(() => new THREE.PlaneGeometry(30000, 30000), []);
+  const geom = useMemo(() => new THREE.PlaneGeometry(300, 300), []);
   const config = useMemo(
     () => ({
       textureWidth: 1012,

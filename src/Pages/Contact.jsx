@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAlignCenter} from '@fortawesome/free-solid-svg-icons'
 import { faTwitter , faInstagram} from '@fortawesome/free-brands-svg-icons'
 
 
@@ -11,7 +10,7 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, 'hwUq8GgAWjZG7M4DT')
+    emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {

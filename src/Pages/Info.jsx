@@ -1,8 +1,11 @@
+import NasaPicture from "../Components/NasaPicture";
 
 export default function Info() {
 
     return (
+     
         <div className="info">
+
     <div className="infoCard">
     <p>blablabal
             blabalabka
