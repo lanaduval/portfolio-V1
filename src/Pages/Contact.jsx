@@ -1,11 +1,8 @@
 import React, { useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
-
 import 'react-toastify/dist/ReactToastify.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter , faInstagram} from '@fortawesome/free-brands-svg-icons'
-
+import Socials from '../Components/Socials';
 
 export default function Contact() {
 
@@ -54,8 +51,7 @@ if (name !==('') && message !==('')){ notify();
      
 
    return (
-        <div>
-            
+            <div>
         <div className="contactForm">
     <h1 >Pour collaborer, <br/> envoyez-moi un message ici :</h1>
 
@@ -75,13 +71,8 @@ if (name !==('') && message !==('')){ notify();
       <textarea placeholder="Votre message" name="message" onChange={handleMessageChange}/>
       <input id="sendButton"type="submit"  value="Send"/>
     </form>
+</div >
+    <Socials/>
     </div>
-
-<a href="https://www.instagram.com/lana.duval/?hl=fr" rel='noopener noreferrer' target="_blank"><FontAwesomeIcon className='fab fa-react fa-2x'style={{color: "#FFF", marginInline:"3rem", marginTop:"0", paddingBlock:"1rem", alignItems:"center", opacity:"0.7"}} icon={faInstagram} /></a>
-<a href="https://twitter.com/Sisslug" rel='noopener noreferrer' target="_blank"><FontAwesomeIcon className='fab fa-react fa-2x' style={{color: "#FFF", marginInline:"2rem", paddingBlock:"1rem", opacity:"0.7"}}icon={faTwitter} /></a>
-
-</div>
-
-    
     );
 }
