@@ -4,7 +4,7 @@ export default function Info() {
         name: "Grosso Modo",
         img:require("../assets/ImgProjets/GrossoModo.png"),
         description: "Les meilleurs pâtes de Paris !",
-        type: " Site vitrine",
+        type: " Site vitrine pour un restaurateur.",
         techno:"#HTML #CSS #javascript",
         url:"https://wildcodeschool.github.io/2022-09-JS-RemoteFR-LesCrewStillants-P1-Restaurant/"
     },{
@@ -18,7 +18,7 @@ export default function Info() {
         name: "Toasty Mood",
         img:require("../assets/ImgProjets/ToastyMoodWeb.png"),
         description: "La météo influe t-elle sur votre humeur ?",
-        type: " Web App de journaling",
+        type: " Web App de journaling.",
         techno:"#javascript #react #APIrest",
         url:"https://toasty-mood.netlify.app/"
 
