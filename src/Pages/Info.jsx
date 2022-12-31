@@ -13,7 +13,7 @@ export default function Info() {
         Mais ce qui m'a conduit vers le développement web c'est mon apprentissage de la <span className='Remboy'>peinture digitale</span> en auto-didacte.<br/>
         <br/>
 
-       J'ai suivi une formation en 2022 à la <span className='Remboy'>Wild Code School </span>, en full remote.<br/>
+       J'ai suivi une formation de développeur <span className='Remboy'>full-stack </span>en 2022 à la <span className='Remboy'>Wild Code School.</span><br/>
         Je suis sensible au développement <span className='Remboy'>front-end : </span>
          aux expériences utilisateurs immersives, aux projets ayant un fort impact visuel.<br/>
         <br/>

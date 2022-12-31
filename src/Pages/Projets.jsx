@@ -2,16 +2,26 @@ export default function Info() {
 
     const projets = [{
         name: "Grosso Modo",
-        url :require("../assets/ImgProjets/ToastyMoodWeb.png"),
-        description: "Site vitrine pour un restaurateur parisien",
+        img:require("../assets/ImgProjets/GrossoModo.png"),
+        description: "Les meilleurs pâtes de Paris !",
+        type: " Site vitrine",
+        techno:"#HTML #CSS #javascript",
+        url:"https://wildcodeschool.github.io/2022-09-JS-RemoteFR-LesCrewStillants-P1-Restaurant/"
     },{
         name: "Find you dream",
-    url :require("../assets/ImgProjets/ToastyMoodWeb.png"),
-    description: "Hackaton de 36h",
+    img:require("../assets/ImgProjets/ToastyMoodWeb.png"),
+    description: "Trouvez votre destination idéale !",
+    type: " Site web de voyage, concept réalisé durant un Hackaton de 36h à la WCS, prix pour l'UX.",
+    techno:"#javascript #react #APIrest #sass",
+    url:"/404"
     },{
         name: "Toasty Mood",
-        url :require("../assets/ImgProjets/ToastyMoodWeb.png"),
-        description: "Web app pour comparer son humeur et la météo",
+        img:require("../assets/ImgProjets/ToastyMoodWeb.png"),
+        description: "La météo influe t-elle sur votre humeur ?",
+        type: " Web App de journaling",
+        techno:"#javascript #react #APIrest",
+        url:"https://toasty-mood.netlify.app/"
+
     }
     ]
 
@@ -19,10 +29,12 @@ export default function Info() {
     <div className="project">
         {projets.reverse().map((projet, index)=>(
         <div key={index} className="projectCard">
-            <h2 >{projet.name}</h2>
-            <img src={projet.url} alt="aperçu du site"/>
+            <h1 >{projet.name}</h1>
+            <img src={projet.img} alt="aperçu du site"/>
+            <h2>{projet.description} </h2>
+            <p>{projet.type} <br/> {projet.techno} </p>
             <a className="link" target="_blank" rel="noreferrer" href={projet.url} > site </a>
-            <p>{projet.description}</p>
+        
             </div>
         ))}
 
