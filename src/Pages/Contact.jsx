@@ -11,10 +11,7 @@ export default function Contact() {
         toast.dark(" Message envoyé ! ✅ ");
 
         };  
- const emptyNotify =()=>{
-    toast.dark(" Message envoyé ! ✅ ");
 
-    };  
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
 

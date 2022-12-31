@@ -9,7 +9,7 @@ export default function Info() {
         url:"https://wildcodeschool.github.io/2022-09-JS-RemoteFR-LesCrewStillants-P1-Restaurant/"
     },{
         name: "Find you dream",
-    img:require("../assets/ImgProjets/ToastyMoodWeb.png"),
+    img:require("../assets/ImgProjets/FindYourDream.gif"),
     description: "Trouvez votre destination idéale !",
     type: " Site web de voyage, concept réalisé durant un Hackaton de 36h à la WCS, prix pour l'UX.",
     techno:"#javascript #react #APIrest #sass",
