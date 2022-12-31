@@ -7,8 +7,8 @@ export default function Info() {
         <div className="info">
     <div className="infoCard">
     <p>
-    <h1>Bonjour, <br/>
-        Lana Duval, développeuse web,</h1>
+    <h1>
+        Je m'appelle Lana et...</h1>
         Je suis passionnée par le domaine des <span className='Remboy'>arts visuels</span>, j'ai été diplômée des Beaux-Arts en 2015.<br/>
         Mais ce qui m'a conduit vers le développement web c'est mon apprentissage de la <span className='Remboy'>peinture digitale</span> en auto-didacte.<br/>
         <br/>

@@ -23,13 +23,6 @@ export default function NasaPicture(){
 return (
    <>
     <img className="nasaAPOD"  src={nasa.url} alt="Astronomic Photography Of the Day" />
-    <p className="nasaText"> {nasa.date}
-<br/>
-<br/>
- <FontAwesomeIcon icon={faCopyright} /> {nasa.copyright}
- <br/>APOD nasa
- 
-    </p>
     </>
 );
 }
