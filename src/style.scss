@@ -1,0 +1,415 @@
+@font-face {
+    font-family: 'Remboy';
+    src: url(assets/fonts/RemboyRegular.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    background: rgb(67,139,213);
+background: radial-gradient(circle, rgba(67,139,213,0.9598214285714286) 15%, rgba(150,202,255,0.9598214285714286) 23%, rgb(106, 62, 140) 97%);
+font-family: 'Oxygen';
+scroll-behavior: smooth;
+}
+
+span{
+  font-family: 'Remboy';
+  font-weight: bold;
+  white-space: nowrap;
+  color:rgb(77, 80, 120);
+  }
+//-----------------------------------------------MOBILE QUERY
+@media only screen and (max-width: 600px) {
+//NAVBAR 
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    
+} 
+.nav {
+    
+        color: rgb(233, 228, 228);
+        text-transform: uppercase;
+        opacity: 1;
+        z-index: 1;
+        backdrop-filter: blur(1.5px);
+        width: 100%;
+    }
+}.nav ul{
+font-size: 0.9rem;
+padding:0.5rem;
+margin:0;
+list-style: none;
+display: flex;
+justify-content: space-between;
+
+:hover{
+    
+    color: rgb(41, 42, 44);
+    opacity: 1;
+    text-shadow:        0 0 7px rgb(236, 230, 250),        0 0 10px rgb(181, 170, 201),        0 0 42px rgb(234, 181, 208),        0 0 77px rgb(230, 18, 124),        0 0 100px rgb(155, 79, 117);
+
+    animation: lumiere 1s infinite linear;
+    -webkit-animation: lumiere 1s infinite linear;
+}
+@keyframes lumiere {
+    0%{
+        text-shadow:
+        0 0 7px rgb(113, 65, 123),
+        0 0 10px rgb(112, 60, 149),
+        0 0 42px rgb(156, 116, 217),
+        0 0 77px rgb(117, 16, 172),
+        0 0 100px rgb(105, 40, 217);
+    }
+   50%{
+        text-shadow:
+        0 0 7px rgb(91, 86, 241),
+        0 0 10px rgb(48, 167, 222),
+        0 0 32px rgb(18, 46, 230),
+        0 0 87px rgb(70, 59, 219),
+        0 0 120px rgb(114, 17, 167);
+    }
+}
+
+}
+// HOME
+.welcome {
+padding: 0;
+z-index: 1;
+position: absolute;
+position: absolute;
+top: 32%;
+left: 30%;
+backdrop-filter: blur(1.5px);
+font-size: 2rem;
+text-align: left;
+font-family: 'Remboy';
+}
+.effetNeon {
+    font-size: 1.8rem;
+    margin-left: -5rem;
+    color: #fff;
+    opacity: 0.6;
+    text-shadow:        0 0 7px rgb(236, 230, 250),        0 0 10px rgb(181, 170, 201),        0 0 42px rgb(234, 181, 208),        0 0 77px rgb(230, 18, 124),        0 0 100px rgb(155, 79, 117);
+}
+.sceneBas {
+height :80vh;
+opacity: 0.7;
+
+}
+.sceneHaut {
+height:30%;
+opacity : 0.7;
+
+}
+.nasaAPOD {
+  position: absolute;
+  opacity: 0.6;
+  z-index: -1;
+  overflow: hidden;
+  top:20%;
+  width: 50%;
+  height:50%;
+  clip-path: ellipse(40% 28%);
+  left: 10%;
+  top: 19%;
+}
+.nasaText {
+  position: absolute;
+  opacity: 0.7;
+  z-index: 1;
+  top:40%;
+  width: 50%;
+  height:50%;
+  left: 10%;
+  top: 54%;
+  font-size: 0.7rem;
+}
+
+// PROJECTS
+.projectCard {
+  font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top:2rem;
+    border-radius:0.2rem;
+    width: 80%;
+    -webkit-border-radius:2rem;
+    -moz-border-radius:0.2rem;
+    -ms-border-radius:0.2rem;
+    -o-border-radius:0.2rem;
+    backdrop-filter: blur(5000px);
+    background-image: radial-gradient(circle, rgba(67,139,213,0.3) 15%, rgba(150,202,255,0.5) 23%, rgb(106, 62, 140, 0.5) 97%);
+}
+.project {
+  margin-top: 5vh;
+  height: 90vh;
+  padding-bottom: 5vh;
+  opacity: 0.8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  width: 100%;
+  bottom: 100%;
+ animation-name: downUp;
+ animation-duration: 3s;
+ animation-iteration-count: 1;
+ @keyframes downUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 1;
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -o-transform: translateY(100%);
+    }
+100% {
+  transform:translateY(0%) ;
+  -webkit-transform:translateY(0%) ;
+  -moz-transform:translateY(0%) ;
+  -ms-transform:translateY(0%) ;
+  -o-transform:translateY(0%) ;
+}
+ }
+}
+.projectCard h1{
+    font-family: 'Remboy';
+    font-size:1.5rem;  
+}
+.projectCard h2{
+  font-family: 'Remboy';
+  font-size:1rem;  
+  text-transform: uppercase;
+}
+.projectCard a{
+  color: #fff;
+margin-top: 0.8rem;
+align-self: center;
+font-weight: bold;
+opacity: 0.8;
+text-transform:uppercase;
+font-size: 0.8rem;
+
+}
+
+// INFOS
+.info {
+display: flex;
+margin: 2rem;
+justify-content: center;
+position: relative;
+    z-index: -1;
+    height:80vh;
+    animation: flip ;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    @keyframes flip {
+      0% {
+      transform: rotateY(0deg);
+      transform: rotateY( 180deg ) ;
+      transition: transform 0.3s;
+      -webkit-transition: transform 0.3s;
+      -moz-transition: transform 0.3s;
+      -ms-transition: transform 0.3s;
+      -o-transition: transform 0.3s;
+}
+    }
+
+}
+
+.infoCard {
+  position: absolute;
+  z-index: 1;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(247, 247, 247, 0.289);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+
+}
+.infoCard h1 {
+  font-family: 'Remboy';
+  font-size: 1.2rem; 
+  color:rgb(77, 80, 120);
+}
+.infoCard p{
+  backdrop-filter: blur(5px);
+  border-radius: 2rem;
+}
+
+.info img{
+opacity: 0.3;
+height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+align-self: center;
+border-radius: 2rem;
+}
+// CONTACT 
+.contactForm {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ color: rgba(0, 0, 0, 0.6);
+ backdrop-filter: blur(10px) invert(10%);
+ background-image: radial-gradient(circle, rgba(108, 168, 228, 0.4) 15%, rgba(150,202,255,0.2) 23%, rgba(100, 56, 132, 0.5) 97%);
+ border-radius: 2rem;
+ margin-top: 3rem;
+ margin-left: 2rem;
+ margin-right: 2rem;
+ margin-bottom: 1rem;
+ padding-top: 2.5rem;
+ padding-bottom: 2rem;
+ animation: fadeIn 3s;
+ -webkit-animation: fadeIn 3s;
+ -moz-animation: fadeIn 3s;
+ -o-animation: fadeIn 3s;
+ -ms-animation: fadeIn 3s;
+ @keyframes fadeIn {
+ 0% { opacity: 0; }
+ 100% { opacity: 1; }
+}
+
+
+}
+.contactForm h1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color:rgb(197, 238, 218);
+
+}
+.contactForm input, textarea {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  margin: 0.5rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border: none;
+  font-family: 'Oxygen';
+
+}
+
+.contactForm label {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+  padding: 2rem;
+
+  
+}
+
+#sendButton{
+  margin-top: 1rem;
+  height: 0.5rem;
+  width: 40%;
+  background-color: rgba(196, 255, 226, 0.7);
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  border: none;
+}
+// 404
+iframe {
+width: 100%;
+height: 70vh;
+}
+.error h1{
+  font-family: 'Oxygen';
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight:150;
+  margin: 1rem;
+}
+.error a{
+  margin: 1rem;
+  font-family: 'Oxygen';
+  text-transform: uppercase;
+}
+//--------------------------------------------------DESKTOP
+@media only screen and (min-width: 600px) {
+
+//HEADER
+
+.welcome {
+
+    top: 20%;
+    left: 27%;
+}
+.effetNeon {
+  font-size: 3rem;
+}
+.nav {
+    
+  color: rgb(233, 228, 228);
+  text-transform: uppercase;
+}
+// NAVBAR
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.nasaAPOD {
+clip-path: ellipse(10% 35%);
+left: 10%;
+top: 10%;
+}
+
+.nasaText{
+  top:52%;
+  left:30%;
+  
+}
+//HOMEPAGE
+
+.sceneBas {
+    height :80vh;
+    position: relative;
+
+}
+.sceneHaut {
+    height:40%;
+    position: relative;
+}
+
+// PROJETS
+.projectCard {
+  padding: 2rem;
+  margin-right: 2rem;
+  margin-top:2rem;
+  width: 50%;
+  }
+
+
+
+// ABOUT/INFO
+
+.infoCard {
+  width: 30%;
+  height: 100%;
+}
+// CONTACT
+.contactForm {
+  margin: 2rem;
+  align-items: center;
+height: 80vh;}
+.socials {
+  opacity: 0.7;
+}
+
+}
