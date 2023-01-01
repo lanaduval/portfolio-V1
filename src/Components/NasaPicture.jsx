@@ -1,7 +1,5 @@
 import axios from "axios";
 import {useEffect, useState} from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 
 export default function NasaPicture(){
 

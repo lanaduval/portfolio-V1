@@ -9,7 +9,6 @@ export default function Contact() {
     const form = useRef();
     const notify = () => {
         toast.dark(" Message envoyé ! ✅ ");
-
         };  
 
   const [name, setName] = useState('');
@@ -22,31 +21,22 @@ export default function Contact() {
 const handleMessageChange = (e) => {
         setMessage(e.target.value);
       };
-      
-const submitMsg = (e) => { e.preventDefault();
-if (name !==('') && message !==('')){ notify();
-} else {
-    toast.error("Formulaire vide ! ❌")
-    }
-}
 
-  
-  const sendEmail = (e) => {
- 
+const sendEmail = (e) => {
+    e.preventDefault();
 
     emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
+          if (name !==('') && message !==('')){ notify();} else {
+            toast.error("Formulaire vide ! ❌")
+            }
       }, (error) => {
           console.log(error.text);
       });
-    
-      e.target.reset();
-    };
+  };
 
     
-     
-
    return (
             <div>
         <div className="contactForm">
@@ -59,7 +49,7 @@ if (name !==('') && message !==('')){ notify();
         toastClassName="dark-toast" >
      </ToastContainer>
 
-<form className='contactFormLabel' ref={form} onSubmit={sendEmail && submitMsg}>
+<form className='contactFormLabel' ref={form} onSubmit={sendEmail}>
       <label >Nom</label>
       <input placeholder="Votre Nom Prénom"type="text" name="user_name" onChange={handleNameChange}/>
       <label>Email</label>
@@ -72,4 +62,4 @@ if (name !==('') && message !==('')){ notify();
     <Socials/>
     </div>
     );
-}
+};
